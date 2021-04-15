@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Banner</title>
+    <link rel="stylesheet" href="bannerStyle.css">
+</head>
+<body>
+    <div class="banner">
+        <img class="image" src="bannerMan.png" alt="Man with alarm clock">
+        <img class="image1" src="bannerMan.png" alt="Man with alarm clock">
+        <div class="inner-banner">
+            <div class="texts">
+                <div id="firstAnm">
+                    <h1 id="text1">Hi <span id="clientName"></span>, Do you need some cash money?</h1>
+                    <h1 id="text2">Withdrawing your funds will make you <span id="dangerColor">loose <span id='loose'></span></span>. Isn't it a shame?</h1>
+                    <button onclick="changeStage(2)" id='firstButton'>
+                        <span id="firstButtonText">What do you offer?</span>
+                    </button>
+                </div>
+                <div id="secondAnm">
+                    <h1 id="text3">Get a personal loan of up to <span id="loanLimit"></span>.</h1>
+                    <h1 id="text4">With an attractive <span id="interest"></span> interest rate.</h1>
+                    <h1 id="text5">And <span id="greenColor">save up to <span id="savings"></span></span>.</h1>
+                    <a href="#" id="secondButton">I'm Interested!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="splitText.js"></script>
+    <script src="bannerScript.js"></script>
+</body>
+</html>
